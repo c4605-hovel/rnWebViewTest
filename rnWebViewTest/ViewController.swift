@@ -7,14 +7,26 @@
 //
 
 import UIKit
+import React
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, RCTBridgeDelegate {
+    func sourceURL(for bridge: RCTBridge!) -> URL! {
+         return URL(string: "http://localhost:8080/index.bundle?platform=ios")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let mockData:NSDictionary = [:]
+        
+        let jsBridge = RCTBridge(delegate: self, launchOptions: nil)
+        let rootView = RCTRootView(
+            bridge: jsBridge!,
+            moduleName: "RNHighScores",
+            initialProperties: mockData as [NSObject : AnyObject]
+        )
+        self.view = rootView
     }
-
-
 }
 
