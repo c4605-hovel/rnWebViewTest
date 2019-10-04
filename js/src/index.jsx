@@ -5,7 +5,7 @@ class RNHighScores extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.content}>It works</Text>
+        <Text style={styles.content}>It works 2</Text>
       </View>
     );
   }

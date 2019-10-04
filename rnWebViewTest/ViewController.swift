@@ -11,7 +11,7 @@ import React
 
 class ViewController: UIViewController, RCTBridgeDelegate {
     func sourceURL(for bridge: RCTBridge!) -> URL! {
-         return URL(string: "http://localhost:8080/index.bundle?platform=ios")
+         return URL(string: "http://localhost:8081/src/index.bundle?platform=ios&dev=true")
     }
     
     override func viewDidLoad() {

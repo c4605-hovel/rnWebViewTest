@@ -1,22 +1,23 @@
 {
   "name": "rnWebViewTest-js",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.jsx",
   "license": "MIT",
+  "scripts": {
+    "start": "react-native start"
+  },
   "dependencies": {
     "@c4605/toolconfs": "^4.7.2",
     "react": "^16.10.1",
     "react-native": "^0.61.2"
   },
   "devDependencies": {
-    "@types/react": "^16.9.4",
-    "@types/react-native": "^0.60.17",
-    "metro": "^0.56.0",
-    "metro-core": "^0.56.0",
-    "typescript": "^3.6.3",
     "@babel/core": "^7.5.0",
     "@babel/runtime": "^7.5.0",
+    "@types/react": "^16.9.4",
+    "@types/react-native": "^0.60.17",
     "metro-react-native-babel-preset": "^0.51.1",
-    "react-test-renderer": "16.8.1"
+    "react-test-renderer": "16.8.1",
+    "typescript": "^3.6.3"
   }
 }
