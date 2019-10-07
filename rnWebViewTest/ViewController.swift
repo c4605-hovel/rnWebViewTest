@@ -11,7 +11,7 @@ import React
 
 class ViewController: UIViewController, RCTBridgeDelegate {
     func sourceURL(for bridge: RCTBridge!) -> URL! {
-         return URL(string: "http://localhost:8081/src/index.bundle?platform=ios&dev=true")
+         return URL(string: "http://127.0.0.1:8081/src/index.bundle?platform=ios&dev=true")
     }
     
     override func viewDidLoad() {
@@ -23,7 +23,7 @@ class ViewController: UIViewController, RCTBridgeDelegate {
         let jsBridge = RCTBridge(delegate: self, launchOptions: nil)
         let rootView = RCTRootView(
             bridge: jsBridge!,
-            moduleName: "RNHighScores",
+            moduleName: "AppRoot",
             initialProperties: mockData as [NSObject : AnyObject]
         )
         self.view = rootView

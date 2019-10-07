@@ -42,4 +42,9 @@ target 'rnWebViewTest' do
   pod 'DoubleConversion', :podspec => "#{rnpath}/third-party-podspecs/DoubleConversion.podspec"
   pod 'glog', :podspec => "#{rnpath}/third-party-podspecs/glog.podspec"
   pod 'Folly', :podspec => "#{rnpath}/third-party-podspecs/Folly.podspec"
+
+  # ReactNative plugins
+  pod 'react-native-webview', :podspec => "node_modules/react-native-webview/react-native-webview.podspec"
+  # pod 'react-native-keyboard-view', :podspec => "node_modules/react-native-keyboard-view/react-native-keyboard-view.podspec"
+  pod 'react-native-safe-area', :podspec => 'node_modules/react-native-safe-area/react-native-safe-area.podspec'
 end
