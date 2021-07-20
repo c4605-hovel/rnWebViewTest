@@ -9,7 +9,7 @@
   "dependencies": {
     "@c4605/toolconfs": "^4.7.2",
     "react": "^16.10.1",
-    "react-native": "^0.61.2",
+    "react-native": "^0.62.3",
     "react-native-keyboard-accessory": "^0.1.9",
     "react-native-keyboard-view": "^4.0.1",
     "react-native-safe-area": "^0.5.1",
